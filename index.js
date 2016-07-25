@@ -103,6 +103,6 @@ function Triangle(side_1, side_2, side_3) {
   this.side_2 = side_2;
   this.side_3 = side_3;
 
-  Polygon.apply(this, [new Side(side_1), new Side(side_2), new Side(side_3)]);
+  Polygon.call(this, [new Side(side_1), new Side(side_2), new Side(side_3)]);
 
 }
